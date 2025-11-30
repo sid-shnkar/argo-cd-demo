@@ -5,6 +5,8 @@ metadata:
   namespace: argo-demo
   labels:
     app.kubernetes.io/name: nginx
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   replicas: 3
   selector:
